@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<style type="text/css">
+			div{
+				margin-left: 510px;
+				margin-top: 200px;
+				border-radius: 10px;
+				padding: 30px;
+				margin-right: 450px;
+				box-shadow: 5px 5px 18px black;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<label><b>Number1:</b></label>
+			<input type="text" name="first" id="first"><br><br>
+			<label><b>Operator: </b></label>
+			<select id="demo">
+				<option value="+" >+</option>
+				<option value="-">-</option>
+				<option value="/">/</option>
+				<option value="*">*</option>
+			</select><br><br>
+			<label><b>Number2:</b></label>
+			<input type="text" name="second" id="second"><br><br>
+			<label><b>Result:</b></label>
+			<input type="text" name="second" id="result"><br><br>
+			<button type="button" onclick="calculate()">Result</button>
+
+			
+			<script type="text/javascript">
+				function calculate() {
+					var x=document.getElementById('first').value;
+					var y=document.getElementById('second').value;
+					var z=document.getElementById('demo').value;
+					var p;
+					switch(z){
+						case '+' :
+							p=parseInt(x)+parseInt(y);
+							break;
+						case '-':
+							p=x-y;
+							break;
+						case '/':
+							p=x/y;
+							break;
+						case '*':
+							p=x*y;
+							break;
+					}
+					document.getElementById('result').value=p;
+				}
+			</script>
+		</div>
+	</body>
+</html>

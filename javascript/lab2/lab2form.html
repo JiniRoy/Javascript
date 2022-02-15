@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Signup Form</title>
+		<style type="text/css">
+
+			#fourm{
+				margin-left: 510px;
+				margin-top: 140px;
+				border-radius: 10px;
+				padding: 30px;
+				margin-right: 450px;
+				box-shadow: 5px 5px 18px black;
+			}
+			button,input{
+				border-radius: 6px;
+				padding: 8px;
+				border: none;
+				border-color: #d6d6c2;
+				margin-left: 100px;
+				box-shadow: 5px 5px 5px  #d6d6c2;
+			}
+			h2{
+				margin-left: 100px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		
+		<form id="fourm">
+			<h2>Signup Form</h2>
+			<label><b>Name:</b></label>
+			<input type="text" name="fname" id="id1" onchange=" namecorrect(); pcorrect();"><br><span id="demo1" style="color:red"></span><span id="demo2" style="color:red"></span>
+			<br><br>
+			<label><b>Email:</b></label>
+			<input type="Email" name="email" id="id2" onchange="validation();"><br><span id="demo3" style="color:red"></span>
+			<br><br>
+			<label><b>Phone:</b></label>
+			<input type="tel" name="phone" id="id3"onchange="numcorrect();"><br><span id="demo4" style="color:red"></span>
+			<br><br>
+			<label><b>Password:</b></label>
+			<input type="Password" name="pwd" id="id4" onchange="passcorrect();"><br><span id="demo5" style="color:red"></span>
+			<br><br>
+			<button type="button" onclick=" myFunction()"><b>Sign In</b></button><br><span id="demo6" style="color:red"></span>
+		</form>
+
+		
+		<script src="lab2form.js"></script>
+	
+
+	</body>
+</html>
